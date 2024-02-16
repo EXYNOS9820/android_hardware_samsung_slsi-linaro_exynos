@@ -190,6 +190,7 @@ char * device_table[DEVICE_CNT] = {
 
     [DEVICE_SUB_MIC]                = "2nd-mic",
     [DEVICE_STEREO_MIC]             = "dualmic",
+    [DEVICE_QUAD_MIC]               = "multi-mic",
     [DEVICE_FULL_MIC]               = "full-mic",
     [DEVICE_HCO_MIC]                = "hco-mic",
     [DEVICE_VCO_MIC]                = "vco-mic",

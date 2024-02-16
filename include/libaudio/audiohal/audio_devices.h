@@ -60,6 +60,7 @@ typedef enum {
 
     DEVICE_SUB_MIC,
     DEVICE_STEREO_MIC,
+    DEVICE_QUAD_MIC,
     DEVICE_FULL_MIC,
     DEVICE_HCO_MIC,
     DEVICE_VCO_MIC,
