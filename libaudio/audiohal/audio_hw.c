@@ -4028,6 +4028,7 @@ static int adev_open_input_stream(
 
                     case AUDIO_SOURCE_CAMCORDER:
                         in->common.stream_usage = AUSAGE_CAMCORDER;
+                        adev_set_route((void *)in, AUSAGE_CAPTURE, ROUTE, NON_FORCE_ROUTE);
                         break;
 
                     case AUDIO_SOURCE_VOICE_COMMUNICATION:
