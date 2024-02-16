@@ -4030,6 +4030,11 @@ static int adev_open_input_stream(
                         in->common.stream_usage = AUSAGE_CAMCORDER;
                         break;
 
+                    case AUDIO_SOURCE_VOICE_COMMUNICATION:
+                        in->common.stream_usage = adev_get_capture_ausage(adev, in);
+                        adev_set_route((void *)in, AUSAGE_CAPTURE, ROUTE, NON_FORCE_ROUTE);
+                        break;
+
                     case AUDIO_SOURCE_VOICE_RECOGNITION:
                         in->common.stream_usage = AUSAGE_RECOGNITION;
                         break;
